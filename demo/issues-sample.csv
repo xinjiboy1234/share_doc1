@@ -1,0 +1,4 @@
+﻿id,title,type,severity,reporter,created,description,steps_to_reproduce,expected,actual
+BUG-1042,导出 CSV 时中文列名乱码,bug,P2,li.wei,2026-03-02,"财务在导出月度报表时，CSV 的列名显示为乱码，导致下游 Excel 模板无法按列名取值","1. 打开报表页 /reports/monthly 2. 选择 2026-02 3. 点击「导出 CSV」 4. 用 Excel 打开导出文件","列名为中文：月份,收入,支出,结余","列名显示为 ????，Excel 中无法识别"
+BUG-1043,登录页主按钮在 Safari 上偏移 2px,bug,P3,zhang.min,2026-03-03,"Safari 17 上登录按钮比 Chrome 低 2 像素，视觉上不居中","1. 用 Safari 17 打开 /login 2. 观察主按钮垂直位置","按钮在容器内垂直居中","按钮偏下约 2px"
+FEAT-2077,工单列表支持按负责人批量筛选,feature,P3,wang.qiang,2026-03-04,"目前只能单个选择负责人，希望支持多选批量筛选","1. 打开工单列表 2. 点击负责人筛选","支持多选并即时过滤","只能单选"

@@ -1,0 +1,5 @@
+# 默认按文本处理，仓库内存 LF
+* text=auto
+
+# 演示用 CSV 必须保持 CRLF：Windows Excel 双击打开中文才不乱码
+*.csv text eol=crlf
